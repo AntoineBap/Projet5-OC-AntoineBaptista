@@ -1,0 +1,70 @@
+.carrousel {
+  .carrousel-container {
+    position: relative;
+    margin-bottom: 20px;
+    img {
+      height: 415px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 30px;
+    }
+    .counter{
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.67px;
+      color: white;
+    }
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+
+      
+      button {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border: none;
+        background-color: transparent;
+
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .picture_alone{
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+  }
+
+  @media (max-width: 1440px) {
+    .carrousel-container{
+      img{
+        height: 380px;
+      }
+    }
+  }
+
+  @media (max-width: 667px) {
+    .carrousel-container{
+      img{
+        height: 245px;
+      }
+    }
+  }
+}

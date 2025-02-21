@@ -1,0 +1,9 @@
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.features-list span {
+  display: block;
+}
